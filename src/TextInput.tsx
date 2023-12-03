@@ -45,7 +45,7 @@ export default function TextInput(props: {
             onBlur={onBlur}
             onChangeText={(text: string) => {
               onChange(text)
-              props.onChange(text)
+              props.onChange && props.onChange(text)
             }}
             value={value}
           />
