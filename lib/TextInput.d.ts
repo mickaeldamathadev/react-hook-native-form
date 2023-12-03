@@ -3,11 +3,11 @@ import { StyleProp, TextStyle } from 'react-native';
  *
  * @param {String} props.name !!! required !!!
  * @param {String} props.placeholder
- * @param {Function} props.onChange
- * @param {String} props.errorMessage
+ * @param {Function} props.onChange Handle text inout change (Autocomplete, filter...)
+ * @param {String} props.errorMessage default: "This is required."
  * @param {Boolean} props.required
  * @param {StyleProp<TextStyle>} props.style
- * @param {Boolean} props.secure
+ * @param {Boolean} props.secure For Password Input
  * @returns
  */
 export default function TextInput(props: {
