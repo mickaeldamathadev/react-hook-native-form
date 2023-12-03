@@ -26,6 +26,7 @@ export default function TextInput(props: {
   required?: boolean
   errorStyle?: StyleProp<TextStyle>
   secure?: boolean
+  style?: StyleProp<TextStyle>
 }) {
   const {
     control,
@@ -40,6 +41,7 @@ export default function TextInput(props: {
         }}
         render={({ field: { onChange, onBlur, value } }) => (
           <TextField
+            style={props.style}
             secureTextEntry={props.secure}
             placeholder={props.placeholder || ''}
             onBlur={onBlur}

@@ -18,4 +18,5 @@ export default function TextInput(props: {
     required?: boolean;
     errorStyle?: StyleProp<TextStyle>;
     secure?: boolean;
+    style?: StyleProp<TextStyle>;
 }): import("react/jsx-runtime").JSX.Element;
